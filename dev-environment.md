@@ -5,8 +5,7 @@
 sudo add-apt-repository ppa:openjdk-r/ppa
 sudo apt update
 sudo apt install openjdk-lts
-# to test java install
-java --version
+java -version
 ```
 
 * Instalar Git (versão mais atual)
@@ -14,7 +13,6 @@ java --version
 sudo add-apt-repository ppa:git-core/ppa
 sudo apt update
 sudo apt install git
-# to test git install
 git --version
 ```
 
