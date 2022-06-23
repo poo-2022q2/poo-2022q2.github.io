@@ -1,0 +1,49 @@
+<h1>Configuração do ambiente de desenvolvimento (Ubuntu 16.04)</h1>
+
+<ul>
+<li><p>Instalar JDK11
+<code>
+sudo add-apt-repository ppa:openjdk-r/ppa
+sudo apt update
+sudo apt install openjdk-lts
+java -version
+</code></p></li>
+<li><p>Instalar Git (versão mais atual)
+<code>
+sudo add-apt-repository ppa:git-core/ppa
+sudo apt update
+sudo apt install git
+git --version
+</code></p></li>
+<li><p>Instalar Visual Studio Code</p>
+
+<ul>
+<li>Baixar arquivo <code>.deb</code> em https://code.visualstudio.com/</li>
+<li>Abrir o terminal no diretório em que foi feito o download e instalar:
+<code>sudo apt install ./&lt;arquivo deb&gt;</code></li>
+</ul></li>
+<li><p>Configurar VSCode</p>
+
+<ul>
+<li>Instalar extensão "Extension Pack for Java" (vscjava.vscode-java-pack)</li>
+<li>Instalar extensão "Gradle for Java" (vscjava.vscode-gradle)</li>
+<li>Configurar JAVA_HOME para o plugin Gradle
+<ul>
+<li>Abrir configurações VSCode (CTRL+,)</li>
+<li>Procurar <code>java.jdt.ls.java.home</code></li>
+<li>Setar o valor da propriedade com <code>/usr/lib/jvm/java-11-openjdk-amd64/</code></li>
+<li>Fechar todas as janelas do VSCode e abrir um projeto Java para testar</li>
+</ul></li>
+</ul></li>
+<li><p>(IDE alternativa) Instalar IntelliJ IDEA</p>
+
+<ul>
+<li>Baixar a versão Community em https://www.jetbrains.com/idea/download/#section=linux</li>
+<li>Descompactar o arquivo <code>.tar.gz</code> baixado</li>
+<li>Copiar a pasta descompactada para um diretório adequado (por exemplo, <code>~/dev/</code>)</li>
+<li>Pelo terminal, entrar no diretório <code>bin</code> da IDE:
+<code>cd &lt;dir-da-intellij&gt;/bin</code></li>
+<li>Executar a IDE: <code>./idea.sh</code></li>
+<li>Criar um "desktop shortcut" para não precisar iniciar pelo terminal toda vez</li>
+</ul></li>
+</ul>
