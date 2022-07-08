@@ -13,6 +13,7 @@ java -version
 ```
 
 * __Instalar Git (versão mais atual)__
+Necessário apenas se for usar IntelliJ IDEA
 ```
 sudo add-apt-repository ppa:git-core/ppa
 sudo apt update
