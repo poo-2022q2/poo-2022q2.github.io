@@ -8,7 +8,7 @@ date:   2022-06-24 15:51:10 -0300
 ```
 sudo add-apt-repository ppa:openjdk-r/ppa
 sudo apt update
-sudo apt install openjdk-17
+sudo apt install openjdk-17-jdk
 java -version
 ```
 
